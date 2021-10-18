@@ -51,7 +51,7 @@ function checked_run () {
 			echo -e "${EC}Command: $COMMAND has failed with code $RESULT. Aborting.${NC}"
 			exit
 		else
-			echo -e "${SC}Command succesfully completed{NC}"
+			echo -e "${SC}Command succesfully completed${NC}"
 			touch $HASH
 		fi
 	fi
@@ -95,12 +95,16 @@ popd
 
 
 step_echo "STEP 5a: Get custom kernel and device tree"
+checked_run "wget ""https://github.com/TakeAirRobotics/OpenOC2_firmware_install/raw/master/OpenOC2_TA_customKernelDTB_${RVERSION}.${VERSION}.tar.gz"""
 
-step_echo "STEP 5b: Copy custom device tree to img"
-checked_run "cp -r Linux_for_Tegra/source/public/build/arch/arm64/boot/dts/* img/Linux_for_Tegra/kernel/dtb" #tegra210-p3448-0002-p3449-0000-b00.dtb img/Linux_for_Tegra/kernel/dtb"
+step_echo "STEP 5b: Extract custom kernel and device tree"
+checked_run "tar -xjf OpenOC2_TA_customKernelDTB_${RVERSION}.${VERSION}.tar.gz"
 
-step_echo "STEP 5c: Copy custom kernel to img"
-checked_run 'cp Linux_for_Tegra/source/public/build/arch/arm64/boot/Image img/Linux_for_Tegra/kernel'
+step_echo "STEP 5c: Copy custom device tree to img"
+checked_run "cp -r tegra210-p3448-0002-p3449-0000-b00.dtb img/Linux_for_Tegra/kernel/dtb" #tegra210-p3448-0002-p3449-0000-b00.dtb img/Linux_for_Tegra/kernel/dtb"
+
+step_echo "STEP 5d: Copy custom kernel to img"
+checked_run 'cp Image img/Linux_for_Tegra/kernel'
 
 
 
