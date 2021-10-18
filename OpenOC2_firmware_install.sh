@@ -118,11 +118,9 @@ popd
 
 
 step_echo "STEP 7: Flash the Jetson (requires sudo password)"
-read -p "Connect a Jetson in recovery mode over USB and press Enter to start flashing"
-pushd img
-pushd Linux_for_Tegra
+read -p "Connect a Jetson in recovery mode over USB and press Enter to start flashing" <&1
+pushd img/Linux_for_Tegra
 sudo ./flash.sh jetson-nano-emmc mmcblk0p1
-popd
 popd
 
 
