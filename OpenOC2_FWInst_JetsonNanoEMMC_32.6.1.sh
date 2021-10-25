@@ -110,7 +110,7 @@ checked_run 'cp Image img/Linux_for_Tegra/kernel'
 
 step_echo "STEP 5e: Add version/revision numbering file to img (requires sudo password)"
 sudo touch img/Linux_for_Tegra/rootfs/boot/OpenOC_version.txt
-sudo echo "Take-Air Open.OC 2 kernel&Device Tree ${REV} for Jetson ${MODULETYPE}. Platform: L4T ${RVERSION}.${VERSION}." > img/Linux_for_Tegra/rootfs/boot/OpenOC_version.txt
+echo "Take-Air Open.OC 2 kernel&device Tree ${REV} for Jetson ${MODULETYPE}. Platform: L4T ${RVERSION}.${VERSION}." | sudo tee img/Linux_for_Tegra/rootfs/boot/OpenOC_version.txt
 
 
 step_echo "STEP 6: Generate and apply binaries (requires sudo password)"
