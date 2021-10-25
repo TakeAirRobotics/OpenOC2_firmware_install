@@ -5,6 +5,7 @@
 # L4T/Jetpack version:
 RVERSION='32'
 VERSION='6.1'
+MODULETYPE='NanoEMMC'
 
 # DO NOT EDIT BELOW THIS LINE
 # ==================================================
@@ -95,10 +96,10 @@ popd
 
 
 step_echo "STEP 5a: Get custom kernel and device tree"
-checked_run "wget ""https://github.com/TakeAirRobotics/OpenOC2_firmware_install/raw/master/OpenOC2_TA_customKernelDTB_${RVERSION}.${VERSION}.tar.xz"""
+checked_run "wget ""https://github.com/TakeAirRobotics/OpenOC2_firmware_install/raw/master/OpenOC2_TA_customKernelDTB_${MODULETYPE}_${RVERSION}.${VERSION}.tar.xz"""
 
 step_echo "STEP 5b: Extract custom kernel and device tree"
-checked_run "tar -xf OpenOC2_TA_customKernelDTB_${RVERSION}.${VERSION}.tar.xz"
+checked_run "tar -xf OpenOC2_TA_customKernelDTB_${MODULETYPE}_${RVERSION}.${VERSION}.tar.xz"
 
 step_echo "STEP 5c: Copy custom device tree to img"
 checked_run "cp -r tegra210-p3448-0002-p3449-0000-b00.dtb img/Linux_for_Tegra/kernel/dtb" #tegra210-p3448-0002-p3449-0000-b00.dtb img/Linux_for_Tegra/kernel/dtb"
