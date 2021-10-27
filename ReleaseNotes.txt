@@ -1,0 +1,10 @@
+Open.OC2 Firmware release notes
+Jetson Nano/EMMC
+
+Not yet released, scheduled for 2021 10 XX R32.6.1 Nano/EMMC rev. 2
+ - Fix support for CAN controller MCP251x
+ - Fix support for Real Time Clock PCF8563
+
+2021 10 15 R32.6.1 Nano/EMMC rev. 1
+ - Initial release
+ - Support for Open.OC2 board on Jetson Nano production module
