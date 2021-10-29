@@ -2,6 +2,8 @@ Open.OC2 Firmware release notes
 Jetson Nano/EMMC
 
 Not yet released, scheduled for 2021 10 XX R32.6.1 Nano/EMMC rev. 2
+ - Default: Cube power disabled
+ - Added device tree overlay for camera
  - Installation: Add firmware patch script, used by both install methods.
  - Add configurable boot script: Controls powering the ESP module and the Cube (configurable by user).
  - Fix support for CAN controller MCP251x.
