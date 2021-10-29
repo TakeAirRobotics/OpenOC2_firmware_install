@@ -2,6 +2,7 @@ Open.OC2 Firmware release notes
 Jetson Nano/EMMC
 
 Not yet released, scheduled for 2021 10 XX R32.6.1 Nano/EMMC rev. 2
+ - Installation: Add default user (openoc2), disable first-boot setup
  - Default: Cube power disabled
  - Added device tree overlay for camera
  - Installation: Add firmware patch script, used by both install methods.
