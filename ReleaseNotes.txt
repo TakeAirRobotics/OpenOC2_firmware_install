@@ -15,4 +15,5 @@ Jetson Nano/EMMC
 
 
 In progress:
+- Add support for LM75B on-board temperature sensors
 - Installation: Add default user (openoc2), disable first-boot setup
