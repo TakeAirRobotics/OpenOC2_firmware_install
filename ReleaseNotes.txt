@@ -15,6 +15,7 @@ Jetson Nano/EMMC
 
 
 In progress:
+- Add support for ATSHA204A crypto chip
 - Add support for LM75B on-board temperature sensors
 - Installation: Check that scripts are run on a supported partition type (ext4, nfs4)
 - Installation: Add default user (openoc2), disable first-boot setup
