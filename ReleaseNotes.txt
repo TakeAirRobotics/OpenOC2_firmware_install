@@ -1,6 +1,10 @@
 Open.OC2 Firmware release notes
 Jetson Nano/EMMC
 
+2022 05 19 R32.7.2 Nano/EMMC rev. 2
+ - Support for ATSHA204A crypto chip
+ - Support for LM75B on-board temperature sensors
+
 2021 10 31 R32.6.1 Nano/EMMC rev. 2
  - Support automount for SD-cards
  - Added device tree overlay for camera
@@ -13,9 +17,3 @@ Jetson Nano/EMMC
  - Initial release.
  - Support for Open.OC2 board on Jetson Nano production module.
 
-
-In progress:
-- Add support for ATSHA204A crypto chip
-- Add support for LM75B on-board temperature sensors
-- Installation: Check that scripts are run on a supported partition type (ext4, nfs4)
-- Installation: Add default user (openoc2), disable first-boot setup
