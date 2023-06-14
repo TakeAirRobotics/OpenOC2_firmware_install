@@ -1,6 +1,10 @@
 Open.OC2 Firmware release notes
 Jetson Nano/EMMC
 
+2023 06 14 R32.7.3 Nano/EMMC rev. 3.2
+ - Switch to Linux for Tegra R32.7.3
+ - Support for ADS1015s
+
 2022 05 23 R32.7.2 Nano/EMMC rev. 3.1
  - Support FAT and NTFS SD partitions correctly.
  - Correctly handle SD partitions that do not have a volume name.
