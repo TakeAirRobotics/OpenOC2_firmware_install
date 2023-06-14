@@ -85,7 +85,7 @@ pushd openoc2-firmware-work/
 
 
 step_echo "STEP 1: Download L4T"
-if [ "$VERSION" == "6.3" ]; then
+if [ "$VERSION" == "7.3" ]; then
 	checked_run "wget ""https://developer.nvidia.com/downloads/remack-sdksjetpack-463r32releasev73sourcest210publicsourcestbz2"""
 	mv remack-sdksjetpack-463r32releasev73sourcest210publicsourcestbz2 jetson-210_linux_r${RVERSION}.${VERSION}_aarch64.tbz2
 else
@@ -93,7 +93,7 @@ else
 fi
 
 step_echo "STEP 2: Download sample root file system"
-if [ "$VERSION" == "6.3" ]; then
+if [ "$VERSION" == "7.3" ]; then
 	checked_run "wget ""https://developer.nvidia.com/downloads/remeleasev73t210tegralinusample-root-filesystemr3273aarch64tbz2"""
 	mv remeleasev73t210tegralinusample-root-filesystemr3273aarch64tbz2 tegra_linux_sample-root-filesystem_r${RVERSION}.${VERSION}_aarch64.tbz2
 else
