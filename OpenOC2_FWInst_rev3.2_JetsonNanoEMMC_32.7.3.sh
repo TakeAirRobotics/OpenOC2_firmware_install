@@ -87,7 +87,7 @@ pushd openoc2-firmware-work/
 step_echo "STEP 1: Download L4T"
 if [ "$VERSION" == "7.3" ]; then
 	checked_run "wget ""https://developer.nvidia.com/downloads/remetpack-463r32releasev73t210jetson-210linur3273aarch64tbz2"""
-	mv remack-sdksjetpack-463r32releasev73sourcest210publicsourcestbz2 jetson-210_linux_r${RVERSION}.${VERSION}_aarch64.tbz2
+	mv remetpack-463r32releasev73t210jetson-210linur3273aarch64tbz2 jetson-210_linux_r${RVERSION}.${VERSION}_aarch64.tbz2
 else
 	checked_run "wget ""https://developer.nvidia.com/embedded/l4t/r${RVERSION}_release_v${VERSION}/t210/jetson-210_linux_r${RVERSION}.${VERSION}_aarch64.tbz2"""
 fi
